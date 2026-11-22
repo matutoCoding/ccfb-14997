@@ -1,0 +1,24 @@
+/* 打印样式：只留下料单内容 */
+@media print {
+  .app-header,
+  .viewport-toolbar,
+  #bom-toolbar .primary,
+  .toast {
+    display: none !important;
+  }
+  body {
+    background: #fff;
+  }
+  .page {
+    overflow: visible;
+    padding: 0;
+  }
+  .card,
+  .stat {
+    box-shadow: none;
+    border-color: #999;
+  }
+  .stat-grid {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}

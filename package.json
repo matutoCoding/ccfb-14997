@@ -1,0 +1,24 @@
+{
+  "name": "lantern-studio",
+  "version": "1.0.0",
+  "private": true,
+  "description": "彩灯骨架扎制与透光预览系统",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc --noEmit && vite build",
+    "preview": "vite preview",
+    "test:optics": "tsx tests/optics_check.ts",
+    "test:smoke": "tsx tests/smoke_cdp.ts",
+    "test:perf": "tsx tests/perf_cdp.ts"
+  },
+  "dependencies": {
+    "three": "^0.169.0"
+  },
+  "devDependencies": {
+    "@types/three": "^0.169.0",
+    "tsx": "^4.23.15",
+    "typescript": "~5.6.3",
+    "vite": "^5.4.10"
+  }
+}
